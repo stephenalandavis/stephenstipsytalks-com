@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "stephenstipsytalks-com"
+version = "0.1.0"
+description = "Tracks the Grip version for viewing Markdown documents."
+authors = ["Stephen A. Davis <stephen@webdavis.io>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+grip = "^4.5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

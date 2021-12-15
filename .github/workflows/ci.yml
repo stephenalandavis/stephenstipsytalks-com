@@ -1,0 +1,14 @@
+name: CI
+
+on:
+  push:
+  schedule:
+    - cron: "0 4 * * 4"
+
+jobs:
+  test:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Smoke Test
+        run: curl -I 'http://stephenstipsytalks.com'

@@ -6,8 +6,8 @@ This file provides instructions for configuring this site on an Amazon EC2 insta
 
 As of `2021-12-15`, this site is available at [stephenstipsytalks.com](stephenstipsytalks.com).
 
-_Note: currently, this is just a static HTML page. However, at some point this will be a
-full-blown web app._
+**Note!** Currently, this is just a static HTML page. However, pretty soon here, it will be a
+full-blown web app.
 
 ## Steps
 
@@ -35,8 +35,8 @@ full-blown web app._
       5. Add Tags: Don't add any tags.
       6. Configure Security Group: add rules for the following: `{ SSH, HTTP }`
       7. Click **Review and Launch** and then **Launch**.
-   5. Create a _key pair_ as a `.pem` file and save it in your local machines
-      `~/.ssh/ubuntu_budget_app.pem` directory.
+   5. Create a _key pair_ as a `.pem` file and save it in your local dev machine's
+      `~/.ssh/stephenstipsytalks-com.pem` directory.
    6. Click **Launch Instances**.
    7. Click **View Instances** to ensure that your instance is `running`.
 3. Configure SSH:
@@ -121,26 +121,43 @@ full-blown web app._
       <html lang="en" dir="ltr">
           <head>
               <meta charset="utf-8">
-              <title>Welcome to my headspace</title>
+              <title>Stephen's headspace</title>
           </head>
-
+      
           <style type="text/css">
-            p { max-width: 35em }
+              p { max-width: 35em }
           </style>
-
+      
           <body>
       
               <h1> Welcome to Stephen's Tipsy Talks</h1>
-
-              <p>A blog where I get drunk and provide my honest opinions about various things, mostly regarding
-              software. Just so you know, I'm really opinionated about this stuff. I've been doing it for a
-              while. When it comes to software, I'm a classacist; I think there is a <i>correct way</i> to
-              write it. I also don't think you need to be a genius to do it. Any idiot can do this, and do
-              it well.</p>
       
-              <p>I have a lot to say, and I hope you stick around to listen.</p>
+              <p>A blog inspired by Steve Yegge's old Amazon blog, <i>Stevey's Drunken Blog Rants</i>.</p>
       
-              <p>P.S. This blog is uncensored. If you except anything else, then respectfully, fuck off.</p>
+              <p>The idea is pretty simple. I'm going to start drinking and proceed to provide my honest
+              opinions about various things, mostly regarding software.</p>
+      
+              <p>Just so you know, I'm really opinionated about this stuff. When it comes to software, I'm
+              a classacist; I think there is a <i>correct way</i> to write it. I also don't think you need
+              to be a genius to do it. Any idiot can do this, and do it well.</p>
+      
+              <p>Here are some of the potential talks I'll be posting:</p>
+              <ul>
+                  <li>The Real Reason MVVM Exists</li>
+                  <li>Tell a Story with Tests</li>
+                  <li>Philosophy-Driven Development</li>
+                  <li>Anyone can do this, and I mean it!</li>
+                  <li>Software should be "Soft"</li>
+                  <li>Don't Sleep on UML</li>
+                  <li>High Resolution Planning and why you should get yourself a pair of Earbuds</li>
+                  <li>Modules and Composition Roots: What we can learn from the Megazord</li>
+                  <li>CI is a Philosophy: Small Commits and Beer Bong Rips</li>
+                  <li>I don't care about your politics. You want to know who really pisses me off?</li>
+              </ul>
+      
+              <p>I have a lot to say. I hope you stick around to listen.</p>
+      
+              <p>P.S. This blog is uncensored. If you expect anything else, then respectfully, fuck off.</p>
       
           </body>
       </html>
